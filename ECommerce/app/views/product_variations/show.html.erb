@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @product_variation.product %>
+</p>
+
+<p>
+  <strong>Variation:</strong>
+  <%= @product_variation.variation %>
+</p>
+
+<p>
+  <strong>Stock:</strong>
+  <%= @product_variation.stock %>
+</p>
+
+<%= link_to 'Edit', edit_product_variation_path(@product_variation) %> |
+<%= link_to 'Back', product_variations_path %>

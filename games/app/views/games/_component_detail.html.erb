@@ -1,0 +1,13 @@
+<li class="media">
+  <% if component.image.attached? %>
+    <%= image_tag component&.image.variant(resize: "100x100").processed, class: "mr-3" %>
+  <% end %>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1"><%= component.name %></h5>
+    </div>
+
+    <% if component.image.attached? %>
+      <%= link_to raw('<i class="fa fa-download"></i>'), rails_blob_path(component.image, disposition: 'attachment'), class: "btn btn-warning" %>
+      <%= link_to raw('<i class="fa fa-edit"></i>'), edit_game_path(component), class: "btn btn-info ml-2" %>
+    <% end %>
+    </li>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  coupon_type: 1
+  discount: 1.5
+  max_usage: 1
+
+two:
+  user: two
+  coupon_type: 1
+  discount: 1.5
+  max_usage: 1

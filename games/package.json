@@ -1,0 +1,7 @@
+{
+  "name": "games",
+  "private": true,
+  "dependencies": {
+    "cocoon-js": "^0.0.5"
+  }
+}
